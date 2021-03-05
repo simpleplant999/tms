@@ -1,0 +1,8 @@
+.router-link-exact-active{
+    background-color: #e3342f!important;
+    color: #fff!important;
+}
+
+.fas{
+    cursor: pointer;
+}

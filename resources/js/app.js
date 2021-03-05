@@ -1,0 +1,24 @@
+require('./bootstrap');
+
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
+
+const routes = [
+    { path: '/', component: require('./components/Dashboard.vue').default },
+    { path: '/tools', component: require('./components/Tools.vue').default },
+    { path: '/employees', component: require('./components/Employees.vue').default },
+    { path: '/history', component: require('./components/History.vue').default },
+    { path: '/lend', component: require('./components/Lend.vue').default },
+    { path: '/*', component: require('./components/NotFound.vue').default },
+]
+
+const router = new VueRouter({
+    mode: 'history',
+    routes
+})
+
+const app = new Vue({
+    router
+}).$mount('#app')
