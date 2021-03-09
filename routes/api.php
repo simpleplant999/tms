@@ -20,5 +20,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::apiResources([
-    'tool' => 'App\Http\Controllers\API\ToolController'
+    'tool' => 'App\Http\Controllers\API\ToolController',
+    'employee' => 'App\Http\Controllers\API\EmployeeController'
 ]);

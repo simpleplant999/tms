@@ -30,6 +30,7 @@
         "babel-preset-es2015": "^6.24.1",
         "sweetalert2": "^10.15.5",
         "vform": "^1.0.1",
+        "vue-qr-generator": "^3.0.1",
         "vue-qrcode-reader": "^2.3.18",
         "vue-router": "^3.5.1"
     }

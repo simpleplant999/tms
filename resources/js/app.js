@@ -5,12 +5,14 @@ import VueRouter from 'vue-router'
 import VueQrcodeReader from "vue-qrcode-reader"
 import { Form, HasError, AlertError } from 'vform'
 import Swal from 'sweetalert2'
+import VueQRCodeComponent from 'vue-qr-generator'
 
 Vue.use(VueRouter)
 Vue.use(VueQrcodeReader)
 
 Vue.component(HasError.name, HasError)
 Vue.component(AlertError.name, AlertError)
+Vue.component('qr-code', VueQRCodeComponent)
 
 window.Form = Form;
 window.Swal = Swal;

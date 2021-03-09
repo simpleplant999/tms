@@ -54,7 +54,7 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Add Tool</h5>
+                        <h5 class="modal-title" id="exampleModalLabel"><span v-text="editMode ? 'Edit Tool' : 'Create Tool'"></span></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>
@@ -67,7 +67,7 @@
                                 <has-error :form="form" field="name"></has-error>
                             </div>
                             <div class="form-group">
-                                <label for="name">Description</label>
+                                <label for="description">Description</label>
                                 <input type="description" class="form-control" v-model="form.description" :class="{ 'is-invalid' : form.errors.has('description') }">
                                 <has-error :form="form" field="description"></has-error>
                             </div>
@@ -93,7 +93,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary"><span v-text="editMode ? 'Edit Tool' : 'Create Tool'"></span></button>
+                            <button type="submit" class="btn btn-primary"><span v-text="editMode ? 'Save' : 'Create'"></span></button>
                         </div>
                     </form>
                 </div>
@@ -151,13 +151,13 @@
 
                     Toast.fire({
                         icon: 'success',
-                        title: 'Shelf Updated.'
+                        title: 'Tool Updated.'
                     })
                 })
                 .catch(()=>{
                     Toast.fire({
                         icon: 'error',
-                        title: 'Shelf Update Failed.'
+                        title: 'Tool Update Failed.'
                     })
                 });
             },
@@ -169,13 +169,13 @@
 
                     Toast.fire({
                         icon: 'success',
-                        title: 'Shelf Created.'
+                        title: 'Tool Created.'
                     })
                 })
                 .catch(() => {
                      Toast.fire({
                         icon: 'error',
-                        title: 'Shelf Creation Failed.'
+                        title: 'Tool Creation Failed.'
                     })
                 });
             },
@@ -195,7 +195,7 @@
                             Fire.$emit('CallTools');
                            Toast.fire({
                                 icon: 'success',
-                                title: 'Shelf Deleted.'
+                                title: 'Tool Deleted.'
                             })
                         })
                         .catch(()=>{})
