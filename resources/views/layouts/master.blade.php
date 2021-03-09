@@ -13,7 +13,7 @@
     
     
     <!-- Custom styles for this template-->
-    <link rel="stylesheet" href="./css/app.css">
+    <link href="./css/app.css" rel="stylesheet">
     <link href="./css/sb-admin-2.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     
@@ -31,7 +31,7 @@
         <div id="wrapper">
             
             <!-- Sidebar -->
-            <ul class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion toggled" id="accordionSidebar">
+            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled" id="accordionSidebar">
                 
                 <!-- Sidebar - Brand -->
                 <span class="sidebar-brand d-flex align-items-center justify-content-center">
@@ -62,14 +62,14 @@
                 <li class="nav-item">
                     <router-link class="nav-link" to='/lend'>
                         <i class="fas fa-fw fa-hand-holding"></i>
-                        <span>Lend Items</span>
+                        <span>Lend Tools</span>
                     </router-link>
                 </li>
 
                 <li class="nav-item">
-                    <router-link class="nav-link" to='/history'>
+                    <router-link class="nav-link" to='/borrowed'>
                         <i class="fas fa-fw fa-clock"></i>
-                        <span>History</span>
+                        <span>Borrowed Tools</span>
                     </router-link>
                 </li>
 

@@ -1,8 +1,19 @@
-.router-link-exact-active{
-    background-color: #e3342f!important;
-    color: #fff!important;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
 }
 
 .fas{
     cursor: pointer;
+}
+
+.router-link-exact-active{
+    background-color: #7b88ff!important;
+    color: #fff!important;
+}
+
+.nav-link{
+    text-transform: uppercase;
 }
