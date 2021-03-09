@@ -3,7 +3,7 @@
         <div class="text-center">
             <qrcode-stream @decode="onDecode" @init="onInit" v-if="QRCode"/>
             <p class="error">{{ error }}</p>
-            <p class="decode-result">Last result: <b>{{ result }}</b></p>
+            <!-- <p class="decode-result">Last result: <b>{{ result }}</b></p> -->
 
             <button class="btn btn-primary" v-on:click="showQRCode">Scan QR Code</button>
             <p class="h4 my-2">OR</p>

@@ -10,7 +10,7 @@
         </div>   
         <div class="row mb-2">
             <div class="col-6">
-                <p class="h4 font-weight-bold">TOOLS</p>
+                <p class="h4 font-weight-bold text-primary">TOOLS</p>
             </div>
             <div class="col-6 text-right">
                  <button class="btn btn-primary" v-on:click="newModal">Add Tool</button>

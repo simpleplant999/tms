@@ -10,7 +10,7 @@
         </div>   
         <div class="row mb-2">
             <div class="col-6">
-                <p class="h4 font-weight-bold">EMPLOYEES</p>
+                <p class="h4 font-weight-bold text-primary">EMPLOYEES</p>
             </div>
             <div class="col-6 text-right">
                  <button class="btn btn-primary" v-on:click="newModal">Add Employee</button>
@@ -89,8 +89,9 @@
                         <div>
                             <qr-code :text="employee.qrcode" v-if="employee.qrcode"></qr-code>
                         </div>
-                        <div>
-                            <p class="h4 mt-2 text-black text-uppercase" v-text="employee.name"></p>
+                        <div class="text-center">
+                            <p class="h3 mt-2 text-uppercase" v-text="employee.name"></p>
+                            <p class="h6 text-uppercase" v-text="employee.employee_id"></p>
                         </div>
                     <!-- <button v-on:click="Print('.PrintQRCode')" class="btn btn-danger">Print</button> -->
                     </div>
